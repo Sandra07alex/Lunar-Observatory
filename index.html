@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunar Observatory - Moon Phase Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="starfield" id="starfield"></div>
+    
+    <div class="container">
+        <header>
+            <h1>Lunar Observatory</h1>
+            <p class="subtitle">Professional Moon Phase Tracking & Lunar Calendar</p>
+        </header>
+
+        <div class="main-section">
+            <div class="current-moon-card">
+                <div class="current-date" id="currentDate"></div>
+                <div class="moon-display">
+                    <div class="moon-phase">
+                        <div class="moon-light" id="currentMoonLight"></div>
+                    </div>
+                </div>
+                <div class="phase-name" id="currentPhaseName"></div>
+                <div class="illumination" id="currentIllumination"></div>
+            </div>
+
+            <div class="moon-info-card">
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">Moon Age</div>
+                        <div class="info-value" id="moonAge"></div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Next Full Moon</div>
+                        <div class="info-value" id="nextFull"></div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Next New Moon</div>
+                        <div class="info-value" id="nextNew"></div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Zodiac Sign</div>
+                        <div class="info-value" id="zodiacSign"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="btn" onclick="toggleSevenDays()">View Next 7 Days</button>
+            <button class="btn" onclick="updateToday()">Refresh Data</button>
+        </div>
+
+        <div class="seven-days" id="sevenDays"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
